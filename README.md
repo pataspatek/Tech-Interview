@@ -1,3 +1,3 @@
 # AlgoExpert
 
-Tech interwiev solutions.
+Tech interview solutions.
