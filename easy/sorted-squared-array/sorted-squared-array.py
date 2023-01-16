@@ -11,7 +11,7 @@ def sorted_squared_array(num_array):
 
 # Time complexity: O(n)
 # Space complexity: O(n)
-def gpt_solution(num_array):
+def optimal_solution(num_array):
     left = 0
     right = len(num_array) - 1
 
@@ -31,5 +31,5 @@ def gpt_solution(num_array):
 def test():
     assert sorted_squared_array([1, 2, 3, 5, 6, 8, 9]) == [1, 4, 9, 25, 36, 64, 81]
 
-    assert gpt_solution([1, 2, 3, 5, 6, 8, 9]) == [1, 4, 9, 25, 36, 64, 81]
+    assert optimal_solution([1, 2, 3, 5, 6, 8, 9]) == [1, 4, 9, 25, 36, 64, 81]
 
