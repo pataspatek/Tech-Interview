@@ -60,4 +60,4 @@ def rename_python_files(root_folder):
 
 
 rename_python_files("medium")
-create_folder_and_files("medium", "min-height-bst")
+create_folder_and_files("medium", "invert-binary-tree")
