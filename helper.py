@@ -1,8 +1,8 @@
-# Managing the fodlers and files
 import os
 
 
 def create_folder_and_files(root_folder, subfolder_name):
+    '''Example usage: create_folder_and_files("easy", "nth-fibonacci")'''
     # Create the root folder if it doesn't already exist
     if not os.path.exists(root_folder):
         os.makedirs(root_folder)
@@ -24,11 +24,9 @@ def create_folder_and_files(root_folder, subfolder_name):
     with open(readme_file_path, 'w') as file:
         file.write("# This is a placeholder README file")
 
-# Example usage:
-# create_folder_and_files("easy", "nth-fibonacci")
-
 
 def rename_python_files(root_folder):
+    '''Example usage: rename_python_files("easy")'''
     # Loop through all subfolders in the root folder
     for subfolder_name in os.listdir(root_folder):
         subfolder_path = os.path.join(root_folder, subfolder_name)
@@ -47,5 +45,3 @@ def rename_python_files(root_folder):
                     # Rename the .py file
                     os.rename(file_path, new_file_path)
 
-# Example usage:
-rename_python_files("easy")
