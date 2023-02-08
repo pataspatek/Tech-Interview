@@ -17,11 +17,11 @@ def insertion_sort(array):
 
         while j >= 0 and array[j] > current:
             
-            # Duplicate the higher number to the right
+            # Duplicate the higher number one spot to the right
             array[j + 1] = array[j]
             j -= 1
 
-        # Place the current number to the right spot
+        # Place the current number to the correct spot
         array[j + 1] = current
 
     return array
